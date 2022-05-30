@@ -14,9 +14,18 @@ body {
     padding: 5px;
 }
 
+.page-navigation {
+    height: 100%;
+}
+
 a {
     text-decoration: none;
     color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 a:hover, a:focus {
@@ -27,9 +36,16 @@ a:hover, a:focus {
     display: none;
 }
 
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
 #navigation-container {
     background-color: #232931;
     max-width: 20%;
+    min-width: 15%;
     padding: 1%;
     display: flex;
     flex-direction: column;
@@ -39,19 +55,20 @@ a:hover, a:focus {
 
 #navigation-container h1 {
     text-transform: uppercase;
-    font-size: 3vw;
+    font-size: 2vw;
+    font-weight: 700;
 }
 
-#navigation-container ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    line-height: 4rem;
+.navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     font-size: 1.5vw;
 }
 
-#navigation-container a {
-    padding: 10px;
+.navigation-list li {
+    padding: 10px 0;
 }
 
 #logo-link {
@@ -72,12 +89,13 @@ a:hover, a:focus {
 }
 
 .social-media-container img {
-    max-width: 50px;
-    min-width: 20px;
+    max-width: 30px;
+    padding: 5px;
 }
 
 .social-media-container {
     justify-self: flex-end;
+    text-align: center;
 }
 
 @keyframes spin {
