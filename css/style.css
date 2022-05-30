@@ -1,0 +1,79 @@
+body {
+    font-family: "Lato 100", "Lato 300", "Lato 400", "Lato 700", "Lato 900", sans-serif;
+    color: white;
+    height: 99vh;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body > div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:focus {
+    color: #72DCB8 !important;
+}
+
+.navigation-on-index {
+    display: none;
+}
+
+#navigation-container {
+    background-color: #232931;
+    max-width: 20%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigation-container h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+#navigation-container ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+#navigation-container a {
+    padding: 10px;
+}
+
+#logo-link {
+    display: block;
+    width: 75%;
+}
+
+.navigation-logo {
+    width: 100%;
+    animation: spin 20s infinite ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    5% {
+        transform: rotate(0deg) scale(1.3);
+    }
+    6% {
+        transform: scale(1);
+    }
+}
