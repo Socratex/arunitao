@@ -22,11 +22,43 @@
                 position: absolute;
                 opacity: 0.3;
                 left: 30%;
+                z-index: 1;
             }
 
             #contact-form {
                 width: 100%;
                 height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+            }
+
+            #contact-form > * {
+                max-width: 70%;
+                min-width: 70%;
+                margin-bottom: 1vh;
+                min-height: 4vh;
+            }
+
+            #contact-form input {
+                font-size: 2vh;
+            }
+
+            #contact-form > textarea {
+                min-height: 10vh;
+                font-size: 2vh;
+            }
+
+            #form-submit-button {
+                float: right;
+            }
+
+            h1 {
+                font-size: 3vw;
+                font-weight: 900;
+                margin: 0;
             }
         </style>
         <script type="application/javascript">
@@ -39,10 +71,18 @@
         <div id="main-container">
             <section id="navigation-container" class="page-navigation"></section>
             <section id="content">
-                <img src="images/logo.png" height="100%">
                 <form id="contact-form">
-
+                    <h1>CONTACT ME</h1>
+                    <span style="font-weight: bold;">I'll be glad to answer your questions!</span>
+                    <input type="text" name="name" placeholder="Name"/>
+                    <input type="text" name="email" placeholder="Email address"/>
+                    <input type="text" name="subject" placeholder="Subject"/>
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <div>
+                        <input id="form-submit-button" type="button" value="Send message"/>
+                    </div>
                 </form>
+                <img src="images/logo.png" height="100%">
             </section>
         </div>
     </body>
