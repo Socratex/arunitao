@@ -21,19 +21,18 @@
                 z-index: 2;
             }
 
-            #content > img {
-                height: 49vh;
-                margin-bottom: 1vh;
+            .content > img {
+                max-height: 48vh;
             }
 
-            #content {
+            .content {
                 position: absolute;
                 left: 1%;
                 width: 98%;
                 display: flex;
                 justify-content: space-between;
+                overflow: hidden;
                 z-index: 1;
-                flex-wrap: wrap;
                 opacity: 0.5;
             }
         </style>
@@ -46,10 +45,12 @@
     <body>
         <div id="main-container">
             <section id="navigation-container"></section>
-            <section id="content">
+            <section class="content">
                 <img src="images/illustrations/Illustssssration.png"/>
-                <img src="images/illustrations/GeishaWampir.jpg"/>
+                <img src="images/illustrations/GeishaWampir.jpg" style="transform: scaleX(1.4)"/>
                 <img src="images/concept-art/FACTIONB.png"/>
+            </section>
+            <section class="content" style="top: 50.4vh">
                 <img src="images/illustrations/EmbeddedImage.png"/>
                 <img src="images/concept-art/FACTIONA.png" style="transform: scaleX(-1)"/>
                 <img src="images/concept-art/cierpiec2.png"/>
