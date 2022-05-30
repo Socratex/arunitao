@@ -71,7 +71,8 @@ a:hover, a:focus {
 }
 
 .social-media-container img {
-    width: 50px;
+    max-width: 50px;
+    min-width: 20px;
 }
 
 .social-media-container {
