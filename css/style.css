@@ -1,16 +1,15 @@
 body {
     font-family: "Lato 100", "Lato 300", "Lato 400", "Lato 700", "Lato 900", sans-serif;
     color: white;
-    height: 50vh;
     margin: 0;
     padding: 0;
+    min-height: 99vh;
 }
 
-body > div {
+#main-container {
     min-height: 99vh;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
     padding: 5px;
 }
 
