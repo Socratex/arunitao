@@ -57,10 +57,11 @@ a:hover, a:focus {
 #logo-link {
     display: block;
     width: 75%;
+    text-align: center;
 }
 
 .navigation-logo {
-    width: 100%;
+    width: 90%;
     animation: spin 20s infinite ease-in-out;
     margin-top: 20px;
     margin-bottom: 50px;
